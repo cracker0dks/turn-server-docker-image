@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Anastasia Zolochevska <anastasiia.zolochevska@gmail.com>
+MAINTAINER cracker0dks
 
 # Set the working directory to /app
 WORKDIR /app
@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 ADD . /app
 
-EXPOSE 3478
+EXPOSE 443
 
 RUN apt-get update && apt-get install -y \
     dnsutils \

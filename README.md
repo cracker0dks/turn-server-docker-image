@@ -1,11 +1,11 @@
 # Docker image for TURN server
 A Docker container with the [Coturn TURN server](https://github.com/coturn/coturn)
 
-sudo docker run -d --net=host --restart=always rofl256/turnserver username password realm listingIps relayIp externalIp authSecret
+sudo docker run -d --net=host --restart=always rofl256/turnserver usernameAdmin passwordAdmin realm listingIps relayIp externalIp authSecret
 
 Turn server is listening on :443 and 4433 (TLS). 
 
-authSecret can be used to generate short time passwords.
+You have to use the authSecret to generate a user and password for each connection! Example: [HERE](https://stackoverflow.com/questions/35766382/coturn-how-to-use-turn-rest-api/35767224#35767224) 
 
 ## Examples
 realm=myturnserver

@@ -16,6 +16,6 @@ listingIps="IP1 IP2" //You can also use it with only one IP
 
 relayIp="IP1"
 
-externalIp="IP2"
+externalIp="IP1"
 
 authSecret="yourSecret"
